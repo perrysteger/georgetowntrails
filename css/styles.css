@@ -1,7 +1,7 @@
 body {
     display: flex;
     flex-direction: column;
-    font-family: "", sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #c4c1c1;
 }
 
@@ -12,7 +12,51 @@ nav {
     justify-content: space-between;
 }
 
-/* .hamburger {
+li {
+  margin: 15px 5px;
+}
+
+section {
+  width: 100%;
+  background-color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px 0 0 0;
+}
+
+.board-img {
+  width: 300px;
+  border-radius: 10px;
+}
+
+.board {
+  width: 100%;
+  margin: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.board-member {
+  width: 33%;  
+}
+
+a{
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(56, 56, 56);
+}
+
+a:active {
+  color: rgb(121, 120, 120);
+}
+
+.hamburger {
     border: 0;
     background-color: transparent;
     margin-top: 15px;
@@ -20,7 +64,7 @@ nav {
   
 .hamburger:focus {
     outline: none;
-} */
+}
   
 .nav-bar {
     display: none;
@@ -29,6 +73,7 @@ nav {
 .nav-bar.show {
     display: flex;
     flex-direction: column;
+    justify-content: flex-end;
     list-style-type: none;
     text-transform: uppercase;
     font-size: 12px;
@@ -59,24 +104,8 @@ nav {
       padding: 10px;
       background-color: transparent;
     }
-  
-
-section {
-    width: 100%;
-    background-color: #ffffff;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
 }
 
-
-
-
-a{
-  color: black;
-  text-decoration: none;
-}
 .button {
 background-color: #848D60;
 border: none;
@@ -91,10 +120,19 @@ margin: 4px 2px;
 transition-duration: 0.4s;
 cursor: pointer;
 }
+
 .button:hover {
 background-color: #b6b5b5;
 color: white;
 }
+
+@media only screen and (max-width: 600px) {
+  .board-member {
+    width: 100%;
+  
+  }
+}
+
   /* td{
     padding: 15px;
     margin: 0;
