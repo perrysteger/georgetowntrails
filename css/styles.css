@@ -4,16 +4,16 @@
 } */
 
 a{
-  color: black;
+  color: rgb(255, 255, 255);
   text-decoration: none;
 }
 
 a:hover {
-  color: rgb(56, 56, 56);
+  color: rgb(146, 146, 146);
 }
 
 a:active {
-  color: rgb(121, 120, 120);
+  color: rgb(204, 204, 204);
 }
 
 .navbar{
@@ -30,6 +30,15 @@ a:active {
 
 .navbar_toggle {
   display: none;
+}
+
+.home-button {
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+  padding: 16px;
+  font-size: 20px;
+  cursor: pointer;
 }
 
 .logo{
@@ -131,7 +140,7 @@ section {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  padding: 40px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 .about {
@@ -191,23 +200,60 @@ section {
 }
 
 .button {
-background-color: #848D60;
-border: none;
-border-radius: 12px;
-color: white;
-padding: 20px;
-text-align: center;
-text-decoration: none;
-display: inline-block;
-font-size: 1em;
-margin: 4px 2px;
-transition-duration: 0.4s;
-cursor: pointer;
+  margin: 10px;
+  border: 0;
+  padding: 5px 5px;
+  font-size: 26px;
+  background-color: #000000;
+  width: 300px;
+  border-radius: 20px;
+  color: #ffffff;
+  /* text-transform: uppercase; */
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
 }
 
 .button:hover {
-background-color: #b6b5b5;
-color: white;
+  background-color: #adabab;
+}
+
+.button:active {
+  box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
+}
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* position: sticky; */
+  bottom: 0;
+  width: 100%;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  background-color: #000000;
+}
+
+.footer-item {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 20px;
+  flex: 30%;
+  flex-wrap: wrap;
+  color: #ffffff;
+  font-size: 16px;
+}
+
+.footer-logo {
+  max-width: 150px;
+  justify-content: center;
+}
+
+.social li {
+  display: inline-flex;
+  list-style: none;
+  font-size: 40px;
+  padding: 20px;
 }
 
 @media only screen and (max-width: 992px) {
@@ -221,137 +267,3 @@ color: white;
   
   }
 }
-
-  /* td{
-    padding: 15px;
-    margin: 0;
-  } */
-  /* th{
-    font-family: 'Averia Sans Libre';
-    font-size: 3em;
-    padding: 50px;
-    font-weight: bold;
-  } */
-  /* .navigation{
-    position: sticky;
-    top: 0;
-  } */
-  /* .nav{
-    background-color: white;
-    color: black;
-    width: 100%;
-    margin: 0;
-    height: 100px;
-  } */
-  /* .navcolor{
-    background-color: white;
-    color: black;
-  } */
-  /* .navheader{
-    text-align: center;
-    font-family: 'Averia Sans Libre';
-    font-size: 25px;
-    font-weight: bold;
-  } */
-  /* .projects{
-    margin: 0;
-  } */
-  /* .projcolor{
-    background-color: #7B97B7;
-    color: white;
-  } */
-  /* .projcontent{
-    font-family: 'Averia Sans Libre';
-    text-align: left;
-    font-size: 1.5em;
-    padding: 50px;
-    padding-top: 0px;
-  } */
-  /* .mission{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  } */
-  /* .memcolor{
-    background-color: #848D60;
-    color: white;
-    width: 33%;
-  } */
-  /* .memtwo{
-    background-color: #848D60;
-    color: white;
-    width: 50%;
-  } */
-  /* .memname{
-    font-family: 'Averia Sans Libre';
-    text-align: center;
-    font-size: 2.5em;
-    padding-bottom: 50px;
-    font-weight: bold;
-    padding: 0px;
-  } */
-  /* .memtitle{
-    font-family: 'Pacifico';
-    text-align: center;
-    font-size: 2.5em;
-    padding-bottom: 50px;
-    font-style: italic;
-    padding: 0px;
-    padding-bottom: 10px;
-  } */
-  /* .membio{
-    font-family: 'Averia Sans Libre';
-    text-align: left;
-    font-size: 1.2em;
-    padding: 50px;
-    padding-top: 0px;
-  } */
-  /* .memtwobio{
-    font-family: 'Averia Sans Libre';
-    text-align: left;
-    font-size: 1.2em;
-    padding: 150px;
-    padding-top: 0px;
-    padding-bottom: 50px;
-  } */
-  /* .contact{
-    text-align: center;
-    font-family: 'Averia Sans Libre';
-    font-size: 25px;
-    font-weight: bold;
-  } */
-  /* .about{
-    border-spacing:0;
-    border-collapse: collapse;
-  } */
-  /* .abcolor{
-    background-color: #454554;
-    color: white;
-    margin-top: 0;
-    margin-bottom: 0;
-  } */
-  /* .subtitle{
-    font-family: 'Satisfy';
-    font-size: 2.5em;
-  } */
-  /* .abparagraph{
-    font-family: 'Averia Sans Libre';
-    text-align: left;
-    font-size: 1.5em;
-    padding: 50px;
-    opacity: 1;
-  } */
-  /* .container {
-    position: relative;
-    text-align: center;
-    margin: 0px;
-    padding: 0px;
-  } */
-  /* .centered {
-   position: absolute;
-   top: 50%;
-   left: 50%;
-   transform: translate(-50%, -50%);
-   color: white;
-   opacity: 0;
-  } */
