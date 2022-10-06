@@ -201,7 +201,6 @@ section {
 
 .button {
   margin: 10px;
-  border: 0;
   padding: 5px 5px;
   font-size: 26px;
   background-color: #000000;
@@ -223,6 +222,7 @@ section {
 }
 
 .footer {
+  margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
