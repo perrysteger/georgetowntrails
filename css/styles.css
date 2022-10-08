@@ -1,6 +1,5 @@
 /* *{
-  margin: 0;
-  padding: 0;
+  box-sizing: border-box;
 } */
 
 a{
@@ -14,6 +13,11 @@ a:hover {
 
 a:active {
   color: rgb(204, 204, 204);
+}
+
+.a-alt {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
 }
 
 .navbar{
