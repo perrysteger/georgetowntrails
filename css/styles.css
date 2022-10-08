@@ -215,6 +215,7 @@ section {
 
 .button:hover {
   background-color: #adabab;
+  color: #ffffff;
 }
 
 .button:active {
