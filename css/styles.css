@@ -97,7 +97,7 @@ a:active {
   .show_nav{
     padding-top: 2%;
     display: flex;
-    width: 100vw;
+    width: 100%;
     /* height: 100vh; */
     flex-direction: column;
     justify-content: flex-start;
@@ -111,6 +111,8 @@ a:active {
     text-align: center;
     padding: 0%;
   }
+
+  
   .navbar_toggle {
     margin-left: 5%;
     margin-right: 5%;
