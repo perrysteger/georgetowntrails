@@ -178,9 +178,15 @@ section {
 }
 
 .board-member {
+  padding: 10px;
   margin: 5px;
+  border: #e4e2e2;
+  box-shadow: 1px 1px 1px 1px rgb(235, 235, 235);
+  border-style: solid;
+  border-radius: 15px;
   flex: 30%;
-  flex-wrap: wrap;  
+  flex-wrap: wrap;
+  justify-content: center;  
 }
 
 .projects {
