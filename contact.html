@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
+    <title>Contact</title>
     <link rel='stylesheet' href='css/styles.css'>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
   </head>
   <body>
     <nav class="navbar">
@@ -20,38 +21,22 @@
       <ul class="main_nav">
         <li><a href="index.html#AboutUs">About Us</a></li>
         <li><a href="index.html#BoardMembers">Board Members</a></li>
-        <li><a href="#Projects">Projects</a></li>
+        <li><a href="projects.html">Projects</a></li>
         <li><a href="index.html#Donate">Donate</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
     </nav>
     <section>
-        <div id="Projects"><h2>Projects</h2></div>
-          <div class="projects">
-            <div class="single-project">
-            <img class="project-img" src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg" alt="Katy Crossing"/>
-            <h3>Katy Crossing</h3>
-            <p>Katy Crossing.... </p>
-            <p><b>Status: Complete</b> | <a href="https://www.trailforks.com/trails/gtf-katy-crossing/" target="_blank" class="a-alt">View on Trailforks</a></p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg" alt="Gotham"/>
-              <h3>Gotham</h3>
-              <p>Gotham.... </p>
-            <p><b>Status: Complete</b> | <a href="https://www.trailforks.com/trails/gtf-gotham/" target="_blank" class="a-alt">View on Trailforks</a></p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg" alt="Shit-Taco"/>
-              <h3>Shit-Taco</h3>
-              <p><b>Status: Under Construction</b> |  Shit-Taco.... </p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="https://baynature.org/wp-content/uploads/2019/12/200118-SQUARE.jpg" alt="Rivery"/>
-              <h3>Rivery</h3>
-              <p><b>Status: Complete</b> |  Rivery.... </p>
-            </div>
-          </div>
-      </section>
+        <div>
+            <form onsubmit="sendEmail(); reset(); return false">
+                <h3>Contact Us</h3>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <input type="text" id="phone" placeholder="Your Phone #" required>
+                <textarea id="message" rows="4" placeholder="Questions/Comments"></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
     </section>
     <footer class="footer">
       <div class="footer-item">
