@@ -7,11 +7,11 @@ navToggle.addEventListener('click', function(){
 
 function sendEmail() {
     Email.send({
-        Host : "smtp.gmail.com",
-        Username : "",
-        Password : "",
-        To : '',
-        From : document.getElementById("email").value,
+        Host : "smtp.elasticemail.com",
+        Username : "georgetowntrails@gmail.com",
+        Password : "18D92D3B8DBBA7B4C3514251BF64083681B2",
+        To : 'georgetowntrails@gmail.com',
+        From : "georgetowntrails@gmail.com", //document.getElementById("email").value,
         Subject : "New Message from GTF Website",
         Body : "Name: " + document.getElementById("name").value
             + "<br> Email: " + document.getElementById("email").value
