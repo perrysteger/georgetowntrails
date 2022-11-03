@@ -11,6 +11,13 @@
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
     <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function() {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('PT9ES6KlyvSgJaUig');
+        })();
+    </script>
   </head>
   <body>
     <nav class="navbar">
@@ -28,18 +35,18 @@
     </nav>
     <section>
         <div>
-            <form onsubmit="sendEmail(); reset(); return false">
-                <h3>Send us a message </h3>
-                <label for="name">Name</label>
-                <input type="text" id="name" required>
-                <label for="email">Email</label>
-                <input type="email" id="email" required>
-                <label for="phone">Phone</label>
-                <input type="tel" id="phone">
-                <label for="message">Message</label>
-                <textarea id="message" rows="4"></textarea>
-                <button type="submit">Send</button>
-            </form>
+          <form onsubmit="sendMail(); reset(); return false">
+              <h3>Send us a message </h3>
+              <label for="name">Name</label>
+              <input type="text" id="name" required>
+              <label for="email">Email</label>
+              <input type="email" id="email" required>
+              <label for="phone">Phone</label>
+              <input type="tel" id="phone">
+              <label for="message">Message</label>
+              <textarea id="message" rows="4"></textarea>
+              <button type="submit">Send</button>
+          </form>
         </div>
     </section>
     <footer class="footer">
@@ -65,6 +72,10 @@
       </ul>
       </div>
     </footer>
+    <script>(function() {
+      // https://dashboard.emailjs.com/admin/account
+      emailjs.init('PT9ES6KlyvSgJaUig');
+  })();</script>
     <script src="js/index.js"></script>
  </body>
 </html>
