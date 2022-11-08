@@ -134,18 +134,12 @@ a:active {
 
   .footer {
     flex-direction: column-reverse;
+    justify-content: center;
   }
 
   .footer-logo {
     max-width: fit-content;
   }
-
-  /* .social li i {
-    display: inline;
-    list-style: none;
-    font-size: 20px;
-    padding: 10px;
-  } */
   
 } 
 
@@ -169,6 +163,7 @@ section {
 .about {
   text-indent: 15px;
   text-align: center;
+  margin: 0px 10px 0px 10px;
 }
 
 .styled-break {
@@ -235,6 +230,7 @@ section {
 .donate p {
   text-indent: 15px;
   text-align: center;
+  margin: 10px;
 }
 
 .donate p a {
