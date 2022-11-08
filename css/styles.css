@@ -136,11 +136,11 @@ a:active {
     display: none;
   }
 
-  .social li {
-    display: inline-flex;
+  .social li i {
+    display: inline;
     list-style: none;
     font-size: 20px;
-    padding: 15px;
+    padding: 10px;
   }
   
 } 
