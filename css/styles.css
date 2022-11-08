@@ -135,6 +135,13 @@ a:active {
   .footer-logo {
     display: none;
   }
+
+  .social li {
+    display: inline-flex;
+    list-style: none;
+    font-size: 20px;
+    padding: 15px;
+  }
   
 } 
 
