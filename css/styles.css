@@ -132,16 +132,20 @@ a:active {
     margin-right: 2%;
   }
 
-  .footer-logo {
-    display: none;
+  .footer {
+    flex-direction: column-reverse;
   }
 
-  .social li i {
+  .footer-logo {
+    max-width: fit-content;
+  }
+
+  /* .social li i {
     display: inline;
     list-style: none;
     font-size: 20px;
     padding: 10px;
-  }
+  } */
   
 } 
 
