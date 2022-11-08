@@ -125,10 +125,15 @@ a:active {
     cursor: pointer;
     display: block;
   }
+
   .logo_header{
     width: 100%;
     justify-content: space-between;
     margin-right: 2%;
+  }
+
+  .footer-logo {
+    display: none;
   }
   
 } 
