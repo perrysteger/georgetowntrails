@@ -2,6 +2,31 @@
   box-sizing: border-box;
 } */
 
+/* ALERTS */
+
+.alert {
+  padding: 20px;
+  background-color: rgb(196, 164, 77);
+  color: white;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+/* LINK DECORATION */
+
 a{
   color: rgb(255, 255, 255);
   text-decoration: none;
@@ -19,6 +44,8 @@ a:active {
   color: rgb(0, 0, 0);
   text-decoration: none;
 }
+
+/* TOP NAVIGATION BAR */
 
 .navbar{
   display: flex;
@@ -160,6 +187,8 @@ section {
   padding: 20px 0 0 0;
 }
 
+/* ABOUT SECTION */
+
 .about h2 {
   text-indent: 15px;
   text-align: center;
@@ -181,6 +210,8 @@ section {
   border-radius: 2.5px;
   margin: 20px 0 20px 0;
 }
+
+/* BOARD MEMBER SECTION */
 
 .board-img {
   width: 300px;
@@ -207,6 +238,22 @@ section {
   flex-wrap: wrap;
   justify-content: center;  
 }
+
+/* DONATE SECTION */
+
+.donate p {
+  text-indent: 15px;
+  /* text-align: center; */
+  /* justify-content: left; */
+  padding: 0px 10px 0px 10px;
+}
+
+.donate p a {
+  color: black;
+  text-decoration: underline;
+}
+
+/* PROJECT SECTION */
 
 .projects {
   /* background-color: #c4c1c1; */
@@ -235,17 +282,22 @@ section {
   justify-content: center;
 }
 
-.donate p {
-  text-indent: 15px;
-  /* text-align: center; */
-  /* justify-content: left; */
-  padding: 0px 10px 0px 10px;
+/* MAP SECTION */
+
+.map-container {
+  display: flex;
+  flex-direction: column;
 }
 
-.donate p a {
-  color: black;
-  text-decoration: underline;
+.map {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  width: 85vw;
+  height: 80vh;
+  border: none;
 }
+
+/* BUTTONS */
 
 .button-group {
   display: flex;
@@ -274,6 +326,8 @@ section {
 .button:active {
   box-shadow: inset -2px -2px 3px rgba(255, 255, 255, 0.6);
 }
+
+/* FORMS */
 
 form {
   background-color: rgb(255, 255, 255);
@@ -318,6 +372,8 @@ form button:hover {
   color: #000000;
 }
 
+/* FOOTER */
+
 .footer {
   margin-top: 20px;
   display: flex;
@@ -346,12 +402,16 @@ form button:hover {
   justify-content: center;
 }
 
+/* SOCIAL MEDIA */
+
 .social li {
   display: inline-flex;
   list-style: none;
   font-size: 40px;
   padding: 20px;
 }
+
+/* MEDIA QUERIES */
 
 @media only screen and (max-width: 992px) {
   .board-member {
