@@ -93,7 +93,8 @@ a:active {
   list-style: none;
 }
 .main_nav li:hover{
-  background-color: gray;
+  text-decoration: underline;
+  font-weight: bold;
 }
 
 .main_nav li{
@@ -124,7 +125,7 @@ a:active {
   .show_nav{
     padding-top: 2%;
     display: flex;
-    width: 100%;
+    width: 90%;
     /* height: 100vh; */
     flex-direction: column;
     justify-content: flex-start;
