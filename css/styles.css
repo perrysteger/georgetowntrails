@@ -6,8 +6,9 @@
 
 .alert {
   padding: 20px;
-  background-color: rgb(196, 164, 77);
+  background-color: rgb(70, 165, 51);
   color: white;
+  text-align: center;
 }
 
 .closebtn {
