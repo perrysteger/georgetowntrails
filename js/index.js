@@ -1,9 +1,18 @@
-const navToggle = document.querySelector(".navbar_toggle");
-const links = document.querySelector(".main_nav");
+// const navToggle = document.querySelector(".navbar_toggle");
+// const links = document.querySelector(".main_nav");
 
-navToggle.addEventListener('click', function(){
-    links.classList.toggle("show_nav");
-})
+// navToggle.addEventListener('click', function(){
+//     links.classList.toggle("show_nav");
+// })
+
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
 
 
 function sendMail() {
