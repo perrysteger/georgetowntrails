@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     <script type="text/javascript">
@@ -19,19 +20,43 @@
     </script>
   </head>
   <body>
-    <nav class="navbar">
-      <div class="logo_header">
-      <a href= "index.html"><button class="home-button"><i class="fa fa-home"></i></button></a>
-      <button class="navbar_toggle"><i class="fas fa-bars"></i></button>
+    <section class="navigation">
+      <div class="nav-container">
+        <!-- <ul class="social-nav">
+          <li><a href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul> -->
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#!">About</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="/#AboutUs">About Us</a>
+                </li>
+                <li>
+                  <a href="/#BoardMembers">Board Members</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="/#Donate">Donate</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="main_nav">
-        <li><a href="index.html#AboutUs">About Us</a></li>
-        <li><a href="index.html#BoardMembers">Board Members</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="index.html#Donate">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    </section>
     <section>
         <div>
           <form onsubmit="sendMail(); reset(); return false">
