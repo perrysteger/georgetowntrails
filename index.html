@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -16,15 +17,43 @@
       <div class="logo_header">
       <a href= "/"><button class="home-button"><i class="fa fa-home"></i></button></a>
       <button class="navbar_toggle"><i class="fas fa-bars"></i></button>
+    <section class="navigation">
+      <div class="nav-container">
+        <!-- <ul class="social-nav">
+          <li><a href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+          <li><a href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+          <li><a href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+        </ul> -->
+        <nav>
+          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+          <ul class="nav-list">
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="#!">About</a>
+              <ul class="nav-dropdown">
+                <li>
+                  <a href="#AboutUs">About Us</a>
+                </li>
+                <li>
+                  <a href="#BoardMembers">Board Members</a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="projects.html">Projects</a>
+            </li>
+            <li>
+              <a href="#Donate">Donate</a>
+            </li>
+            <li>
+              <a href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </nav>
       </div>
-      <ul class="main_nav">
-        <li><a href="#AboutUs">About Us</a></li>
-        <li><a href="#BoardMembers">Board Members</a></li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="#Donate">Donate</a></li>
-        <li><a href="contact.html">Contact Us</a></li>
-      </ul>
-    </nav>
+    </section>
     <div class="alert">
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
       <strong>Join Us!</strong> December 18th, 2022 at 9am at <a href="https://www.google.com/maps/place/Chautauqua+Park/@30.6375259,-97.6848992,286m/data=!3m1!1e3!4m5!3m4!1s0x8644d66ef86341ed:0x720cb4647797f9f1!8m2!3d30.6376758!4d-97.6846093" target="_blank"><u>Chautauqua Park in Georgetown</u></a> for a volunteer build day.
