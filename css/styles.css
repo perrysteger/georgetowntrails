@@ -273,6 +273,13 @@ padding: 20px 0 0 0;
   justify-content: space-between;
 }
 
+.board-2-col {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 0px 200px;
+}
+
 .board-member {
   padding: 10px;
   margin: 5px;
@@ -282,6 +289,25 @@ padding: 20px 0 0 0;
   flex: 30%;
   flex-wrap: wrap;
   justify-content: center;  
+}
+
+/* MEDIA QUERY FOR BOARD MEMBER SECTION */
+
+@media only screen and (max-width: 992px) {
+  .board-member {
+    width: 60%;
+  }
+  .board-2-col {
+    padding: 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .board-member {
+    width: 100%;
+  }
+  .board-2-col {
+    padding: 0;
+  }
 }
 
 /* DONATE SECTION */
@@ -467,18 +493,4 @@ form button:hover {
   list-style: none;
   font-size: 40px;
   padding: 20px;
-}
-
-/* MEDIA QUERY FOR BOARD MEMBER SECTION */
-
-@media only screen and (max-width: 992px) {
-  .board-member {
-    width: 60%;
-  }
-}
-@media only screen and (max-width: 600px) {
-  .board-member {
-    width: 100%;
-  
-  }
 }
