@@ -5,51 +5,49 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Georgetown Trails Foundation</title>
-    <link rel='stylesheet' href='css/styles.css'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- <link rel='stylesheet' href='css/styles.css'> -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script> -->
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
     <script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/d15c61dd27b10ec97eebf58c4/963f39d63d57a46c3b2e79fc7.js");</script>
   </head>
   <body>
-    <section class="navigation">
-      <div class="nav-container">
-        <!-- <ul class="social-nav">
-          <li><a href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul> -->
-        <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#!">About</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="#AboutUs">About Us</a>
-                </li>
-                <li>
-                  <a href="#BoardMembers">Board Members</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="#Donate">Donate</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <section>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#AboutUs">About Us</a></li>
+                  <li><a class="dropdown-item" href="#BoardMembers">Board Members</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="projects.html">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Donate">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </section>
     <!-- <div class="alert">
       <span class="closebtn" onclick="this.parentElement.style.display='none';">&times;</span> 
@@ -74,12 +72,16 @@
       </div>
     </div>
     <script src="https://fast.wistia.net/assets/external/E-v1.js" async=""></script>
-    <section>
-      <div class="about" id="AboutUs">
-        <h2>Our mission is to promote, create, and maintain a natural surface trail system in Georgetown for outdoor recreation, public health and well-being, economic development, and community enrichment.</h2>
-        <p>With its uniquely scenic terrain, twin rivers, rugged lake, plentiful green space, and already existing trail infrastructure, Georgetown is uniquely poised to offer one of the best nature trail systems in the state of Texas. We believe there is a rising opportunity for development of natural surface trails within and around the city of Georgetown.</p>
-        <p>With the greater Austin area continuing to grow rapidly, an expanded natural surface trail network would provide valuable space for residents to recreate and exercise, thereby improving public health and well being. An improved trail network would also attract visitors, provide economic opportunities for local businesses, and garner positive press for the community’s reputation. Such a network would also align well with the goals of other local non-profit organizations and private and public entities, which we hope to work closely with to help further mutual goals.</p>
-        <p>We strongly feel that a well designed trail system that is free, inclusive, and equitable would help connect the community of Georgetown, both to one another and to the natural environment. Citizens of diverse backgrounds, identities and experiences all stand to benefit.</p>
+    <section class="container" id="AboutUs">
+      <div class="row">
+        <div class="col-md-6 d-flex align-items-center">
+          <h2>Our mission is to promote, create, and maintain a natural surface trail system in Georgetown for outdoor recreation, public health and well-being, economic development, and community enrichment.</h2>
+        </div>
+        <div class="col-md-6">  
+          <p>With its uniquely scenic terrain, twin rivers, rugged lake, plentiful green space, and already existing trail infrastructure, Georgetown is uniquely poised to offer one of the best nature trail systems in the state of Texas. We believe there is a rising opportunity for development of natural surface trails within and around the city of Georgetown.</p>
+          <p>With the greater Austin area continuing to grow rapidly, an expanded natural surface trail network would provide valuable space for residents to recreate and exercise, thereby improving public health and well being. An improved trail network would also attract visitors, provide economic opportunities for local businesses, and garner positive press for the community’s reputation. Such a network would also align well with the goals of other local non-profit organizations and private and public entities, which we hope to work closely with to help further mutual goals.</p>
+          <p>We strongly feel that a well designed trail system that is free, inclusive, and equitable would help connect the community of Georgetown, both to one another and to the natural environment. Citizens of diverse backgrounds, identities and experiences all stand to benefit.</p>
+        </div>
       </div>
     </section>
     <div class="styled-break"></div>
@@ -173,6 +175,7 @@
       </ul>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
  </body>
 </html>
