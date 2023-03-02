@@ -4,112 +4,234 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects</title>
-    <link rel='stylesheet' href='css/styles.css'>
+    <title>Georgetown Trails Foundation</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css\custom.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="images\GTF_logo.png">
     <script src="https://kit.fontawesome.com/191627f0f7.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
   </head>
   <body>
-    <section class="navigation">
-      <div class="nav-container">
-        <!-- <ul class="social-nav">
-          <li><a href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-        </ul> -->
-        <nav>
-          <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
-          <ul class="nav-list">
-            <li>
-              <a href="/">Home</a>
-            </li>
-            <li>
-              <a href="#!">About</a>
-              <ul class="nav-dropdown">
-                <li>
-                  <a href="/#AboutUs">About Us</a>
-                </li>
-                <li>
-                  <a href="/#BoardMembers">Board Members</a>
-                </li>
-              </ul>
-            </li>
-            <li>
-              <a href="projects.html">Projects</a>
-            </li>
-            <li>
-              <a href="/#Donate">Donate</a>
-            </li>
-            <li>
-              <a href="contact.html">Contact</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </section>
     <section>
-        <div id="Projects"><h2>Projects</h2></div>
-          <div class="projects">
-            <div class="single-project">
-            <img class="project-img" src="images\projects\KatyMain.png" alt="Katy Crossing"/>
-              <h3>Katy Crossing</h3>
-              <p>Two miles of flowy and fun trail in the heart of San Gabriel Park. Expect wide tread, nice views and lots of fun.</p>
-              <p><b>Status: Complete</b> | <a href="https://www.trailforks.com/trails/gtf-katy-crossing/" target="_blank" class="a-alt">View on Trailforks</a></p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="images\projects\GothamMain.png" alt="Gotham"/>
-              <h3>Gotham</h3>
-              <p>This trail was created to maximize river views and take advantage of the natural terrain. The trail switchbacks up the slope of the land and can be ridden both ways. Wide tread allows for multiple lines and the bench cut sections are fun and flowy. Look for "Real Rock" on the top section, it's rideable both ways and definitely a challenge.</p>
-            <p><b>Status: Complete</b> | <a href="https://www.trailforks.com/trails/gtf-gotham/" target="_blank" class="a-alt">View on Trailforks</a></p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="images\projects\ChautauquaMain.png" alt="Chautauqua"/>
-              <h3>Chautauqua</h3>
-              <p>Description coming soon...</p>
-              <p><b>Status: Under Construction</b> | <a href="" target="_blank" class="a-alt">View on Trailforks</a></p>
-            </div>
-            <div class="single-project">
-              <img class="project-img" src="images\projects\RiveryMain.png" alt="Rivery"/>
-              <h3>Rivery</h3>
-              <p>Description coming soon...</p>
-              <p><b>Status: Complete</b> | <a href="" target="_blank" class="a-alt">View on Trailforks</a></p>
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top text-uppercase" data-bs-theme="dark">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="/">Home</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="/#AboutUs">About Us</a></li>
+                  <li><a class="dropdown-item" href="/#BoardMembers">Board Members</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="/#Donate">Donate</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <section class="container p-3 mt-4">
+      <div class="text-center my-3"><h3>Projects</h3></div>
+      <div class="class=row row-cols-1 row-cols-md-3 g-4">
+        <div class="col mb-4">
+          <div class="card">
+            <div id="carouselKaty" class="carousel carousel-dark slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselKaty" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselKaty" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselKaty" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\projects\KatyMain.png" class="d-block w-100" alt="Katy Crossing">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\KatyDirtRibbon.PNG" class="d-block w-100" alt="Katy Crossing 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\KatyMain.png" class="d-block w-100" alt="Katy Crossing 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselKaty" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselKaty" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  
+            <div class="card-body">
+              <h5 class="card-title">Katy Crossing</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Status: Complete</h6>
+              <p class="card-text">Two miles of flowy and fun trail in the heart of San Gabriel Park. Expect wide tread, nice views and lots of fun.</p>
+              <a href="https://www.trailforks.com/trails/gtf-katy-crossing/" class="card-link" target="_blank">Trailforks</a>
             </div>
           </div>
-    </section>
-    <div class="styled-break"></div>
-    <section class="map-container">
-      <h2>Interactive Map</h2>
-      <p><a class="a-alt" href="https://www.arcgis.com/apps/instant/basic/index.html?appid=1e5062aa328e44d5897655cb8601beaa" target="_blank"><strong>Click here</strong></a> to view the interactive web map in fullscreen.</p>
-      <iframe id="map" class="map" src="https://www.arcgis.com/apps/instant/basic/index.html?appid=1e5062aa328e44d5897655cb8601beaa" title="GTF Interactive Web Map"></iframe>
-    </section>
-    <footer class="footer">
-      <div class="footer-item">
-        <p>
-        <b>Contact</b>
-        <br>
-        <a href="https://georgetowntrails.us14.list-manage.com/subscribe?u=d15c61dd27b10ec97eebf58c4&id=aa01ba196e" target="_blank"><u>Join our mailing list!</u></a>
-        <br>
-        Address: 1978 South Austin Ave, Georgetown, TX 78626
-        <br>
-        Email: <a href="mailto:georgetowntrails@gmail.com">georgetowntrails@gmail.com</a>
-        <br>
-        Phone: 512-913-2440
-        </p>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div id="carouselGotham" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselGotham" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselGotham" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselGotham" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\projects\GothamMain.png" class="d-block w-100" alt="Gotham">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\GothamMain.png" class="d-block w-100" alt="Gotham 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\GothamMain.png" class="d-block w-100" alt="Gotham 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselGotham" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselGotham" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  
+            <div class="card-body">
+              <h5 class="card-title">Gotham</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Status: Complete</h6>
+              <p class="card-text">This trail was created to maximize river views and take advantage of the natural terrain. The trail switchbacks up the slope of the land and can be ridden both ways. Wide tread allows for multiple lines and the bench cut sections are fun and flowy. Look for "Real Rock" on the top section, it's rideable both ways and definitely a challenge.</p>
+              <a href="https://www.trailforks.com/trails/gtf-gotham/" class="card-link" target="_blank">Trailforks</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div id="carouselChautauqua" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselChautauqua" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselChautauqua" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselChautauqua" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\projects\ChautauquaMain.png" class="d-block w-100 h-100" alt="Chautauqua">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\TacoDirtRibbon.png" class="d-block w-100 h-100" alt="Chautauqua 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\ChautauquaMain.png" class="d-block w-100 h-100" alt="Chautauqua 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselChautauqua" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselChautauqua" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  
+            <div class="card-body">
+              <h5 class="card-title">Chautauqua</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Status: Complete</h6>
+              <p class="card-text">Description coming soon...</p>
+              <a href="" class="card-link" target="_blank">Trailforks</a>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div id="carouselRivery" class="carousel slide" data-bs-ride="false">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselRivery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselRivery" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselRivery" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="images\projects\RiveryMain.png" class="d-block w-100" alt="Rivery">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\RiveryMain.png" class="d-block w-100" alt="Rivery 2">
+                </div>
+                <div class="carousel-item">
+                  <img src="images\projects\RiveryMain.png" class="d-block w-100" alt="Rivery 3">
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselRivery" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselRivery" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>  
+            <div class="card-body">
+              <h5 class="card-title">Rivery</h5>
+              <h6 class="card-subtitle mb-2 text-muted">Status: Complete</h6>
+              <p class="card-text">Description coming soon...</p>
+              <a href="" class="card-link" target="_blank">Trailforks</a>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="footer-item">
-        <img class="footer-logo "src="images\GTF_logo.png" alt="GTF Logo">
+    </section>
+    <section class="container">
+      <div class="text-center mb-3"><h3>Interactive Map</h3></div>
+      <div class="text-center">
+        <a class="btn btn-dark btn-lg mb-3 text-uppercase" href="https://www.arcgis.com/apps/instant/basic/index.html?appid=1e5062aa328e44d5897655cb8601beaa" target="_blank">See the fullscreen map</a>
       </div>
-      <div class="footer-item">
-        <ul class="social">
-          <li><a href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-          <li><a href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
-          <li><a href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-      </ul>
+      <div class="text-center mb-5 ratio ratio-16x9">
+        <iframe src="https://www.arcgis.com/apps/instant/basic/index.html?appid=1e5062aa328e44d5897655cb8601beaa" title="GTF Interactive Web Map"></iframe>
+      </div>
+      </section>
+    <footer class="bg-dark text-center" data-bs-theme="dark">
+      <div class="row p-3">
+        <section class="col-md-4 mb-3">
+          <h6 class="text-uppercase fw-bold mb-2">Connect with Us</h6>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.instagram.com/gtxtrails/" target="_blank"><i class="fab fa-instagram"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.facebook.com/profile.php?id=100084938693992" target="_blank"><i class="fab fa-facebook"></i></a>
+          <a class="btn btn-outline-light btn-floating m-1" href="https://www.linkedin.com/company/georgetown-trails-foundation" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </section>
+        <section class="col-md-4 mb-3">
+          <h6 class="text-uppercase fw-bold mb-2">Mailing List</h6>
+          <p class="d-flex justify-content-center align-items-center">
+            <span class="me-3 text-white">Join our mailing list:</span>
+            <a class="btn btn-outline-light btn-rounded" href="https://georgetowntrails.us14.list-manage.com/subscribe?u=d15c61dd27b10ec97eebf58c4&id=aa01ba196e" target="_blank">Sign up!</a>
+          </p>
+        </section>
+        <section class="col-md-4 mb-3 text-white">
+          <h6 class="text-uppercase fw-bold mb-2">Contact</h6>
+          <p><i class="fas fa-home me-3 text-secondary"></i>1978 South Austin Ave, Georgetown, TX 78626</p>
+          <p><i class="fas fa-envelope me-3 text-secondary"></i><a href="mailto:georgetowntrails@gmail.com">georgetowntrails@gmail.com</a></p>
+          <p><i class="fas fa-phone me-3 text-secondary"></i>512-913-2440</p>
+        </section>
+        <div class="mb-3 text-white">
+          <p>Copyright © <script>document.write(new Date().getFullYear())</script> Georgetown Trails Foundation, All Rights Reserved.</a></p>
+        </div>
       </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="js/index.js"></script>
  </body>
 </html>
